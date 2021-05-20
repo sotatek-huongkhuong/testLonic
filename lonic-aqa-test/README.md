@@ -1,4 +1,4 @@
-<h1>Setel assignment No.2</h1>
+<h1>Lonic App test</h1>
 <h2>Install environment</h2>
 <h3>Java 8 or newer</h3>
 Use openjdk or Oracle's

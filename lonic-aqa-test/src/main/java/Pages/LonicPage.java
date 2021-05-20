@@ -47,7 +47,7 @@ public class LonicPage extends BasePage{
 	WebElement pic7;
 	@FindBy(xpath="//img[@src='assets/20201102_150217.jpg']")
 	WebElement pic8;
-	@FindBy(xpath="//img[@src='assets/20201102_150217.jpg']")
+	@FindBy(xpath="//img[@src='assets/20201102_145719.jpg']")
 	WebElement pic9;
 	
 	

@@ -34,5 +34,25 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/HP/.m2/repository/org/codehaus/groovy/groovy/3.0.7/groovy-3.0.7.jar" sourcepath="C:/Users/HP/.m2/repository/org/codehaus/groovy/groovy/3.0.7/groovy-3.0.7-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="test" value="true"/>
+			<attribute name="maven.groupId" value="org.codehaus.groovy"/>
+			<attribute name="maven.artifactId" value="groovy"/>
+			<attribute name="maven.version" value="3.0.7"/>
+			<attribute name="maven.scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/HP/.m2/repository/junit/junit/4.10/junit-4.10.jar" sourcepath="C:/Users/HP/.m2/repository/junit/junit/4.10/junit-4.10-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="junit"/>
+			<attribute name="maven.artifactId" value="junit"/>
+			<attribute name="maven.version" value="4.10"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="/setel-assignment-2"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

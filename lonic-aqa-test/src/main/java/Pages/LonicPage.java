@@ -2,6 +2,7 @@ package Pages;
 
 import java.util.List;
 
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -47,7 +48,7 @@ public class LonicPage extends BasePage{
 	WebElement pic7;
 	@FindBy(xpath="//img[@src='assets/20201102_150217.jpg']")
 	WebElement pic8;
-	@FindBy(xpath="//img[@src='assets/20201102_150217.jpg']")
+	@FindBy(xpath="//img[@src='assets/20201102_145719.jpg']")
 	WebElement pic9;
 	
 	
@@ -57,6 +58,90 @@ public class LonicPage extends BasePage{
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
+	public void scrollToBtnGoTo1()
+	{
+		scrollToElement(btnGotoPic1);
+	}
+	public void scrollToBtnGoTo2()
+	{
+		scrollToElement(btnGotoPic2);
+	}
+	public void scrollToBtnGoTo3()
+	{
+		scrollToElement(btnGotoPic3);
+	}
+	public void scrollToBtnGoTo4()
+	{
+		scrollToElement(btnGotoPic4);
+	}
+	public void scrollToBtnGoTo5()
+	{
+		scrollToElement(btnGotoPic5);
+	}
+	public void scrollToBtnGoTo6()
+	{
+		scrollToElement(btnGotoPic6);
+	}
+	public void scrollToBtnGoTo7()
+	{
+		scrollToElement(btnGotoPic7);
+	}
+	public void scrollToBtnGoTo8()
+	{
+		scrollToElement(btnGotoPic8);
+	}
+	public void scrollToBtnGoTo9()
+	{
+		scrollToElement(btnGotoPic9);
+	}
+	
+	public void checkbtn0isDisplayed ()
+	{
+		checkElementToClickable(btnGotoPic0,driver);
+	}
+	public void checkbtn1isDisplayed()
+	{
+		checkElementToClickable(btnGotoPic1,driver);
+	}	
+	public void checkbtn2isDisplayed()
+	{
+		checkElementToClickable(btnGotoPic2,driver);
+	}	
+	public void checkbtn3isDisplayed()
+	{
+		checkElementToClickable(btnGotoPic3,driver);
+	}	
+	public void checkbtn4isDisplayed()
+	{
+		checkElementToClickable(btnGotoPic4,driver);
+	}	
+	public void checkbtn5isDisplayed()
+	{
+		checkElementToClickable(btnGotoPic5,driver);
+	}	
+	public void checkbtn6isDisplayed()
+	{
+		checkElementToClickable(btnGotoPic6,driver);
+	}	
+	public void checkbtn7isDisplayed()
+	{
+		checkElementToClickable(btnGotoPic7,driver);
+	}	
+	public void checkbtn8isDisplayed ()
+	{
+		checkElementToClickable(btnGotoPic8,driver);
+	}
+	public void checkbtn9isDisplayed ()
+	{
+		checkElementToClickable(btnGotoPic9,driver);
+	}
+	
+	
+	public void scrollToBtnGoTo0()
+	{
+		scrollToElement(btnGotoPic0);
+	}
+
 	public void clickGoTo0()
 	{
 		click(btnGotoPic0);
@@ -97,9 +182,136 @@ public class LonicPage extends BasePage{
 	{
 		click(btnGotoPic9);
 	}
-	
-	
-	
+	public void checkbtn0VisibleInViewPort()
+	{
+		if(isVisibleInViewport(btnGotoPic0))
+		{
+			System.out.println(btnGotoPic0+" is Visible In Viewport");
+		}
+		else
+		{
+			System.out.println(btnGotoPic0+" isn't  Visible In Viewport");
+			Assert.assertTrue(isVisibleInViewport(btnGotoPic0));
+		}
+		
+	}
+	public void checkbtn1VisibleInViewPort()
+	{
+		if(isVisibleInViewport(btnGotoPic1))
+		{
+			System.out.println(btnGotoPic1+" is Visible In Viewport");
+		}
+		else
+		{
+			System.out.println(btnGotoPic1+" isn't  Visible In Viewport");
+			Assert.assertTrue(isVisibleInViewport(btnGotoPic1));
+		}
+		
+	}
+	public void checkbtn2VisibleInViewPort()
+	{
+		if(isVisibleInViewport(btnGotoPic2))
+		{
+			System.out.println(btnGotoPic2+" is Visible In Viewport");
+		}
+		else
+		{
+			System.out.println(btnGotoPic2+ " Not  Visible In Viewport");
+			Assert.assertTrue(isVisibleInViewport(btnGotoPic2));
+		}
+		
+	}
+	public void checkbtn3VisibleInViewPort()
+	{
+		if(isVisibleInViewport(btnGotoPic3))
+		{
+			System.out.println(btnGotoPic3+" is Visible In Viewport");
+		}
+		else
+		{
+			System.out.println(btnGotoPic3+" isn't  Visible In Viewport");
+			Assert.assertTrue(isVisibleInViewport(btnGotoPic3));
+		}
+		
+	}
+	public void checkbtn4VisibleInViewPort()
+	{
+		if(isVisibleInViewport(btnGotoPic4))
+		{
+			System.out.println(btnGotoPic4+" is Visible In Viewport");
+		}
+		else
+		{
+			System.out.println(btnGotoPic4+" isn't  Visible In Viewport");
+			Assert.assertTrue(isVisibleInViewport(btnGotoPic4));
+		}
+		
+	}
+	public void checkbtn5VisibleInViewPort()
+	{
+		if(isVisibleInViewport(btnGotoPic5))
+		{
+			System.out.println(btnGotoPic5+" is Visible In Viewport");
+		}
+		else
+		{
+			System.out.println(btnGotoPic5+" isn't  Visible In Viewport");
+			Assert.assertTrue(isVisibleInViewport(btnGotoPic5));
+		}
+		
+	}
+	public void checkbtn6VisibleInViewPort()
+	{
+		if(isVisibleInViewport(btnGotoPic6))
+		{
+			System.out.println(btnGotoPic6+" is Visible In Viewport");
+		}
+		else
+		{
+			System.out.println(btnGotoPic6+" isn't  Visible In Viewport");
+			Assert.assertTrue(isVisibleInViewport(btnGotoPic6));
+		}
+		
+	}
+	public void checkbtn7VisibleInViewPort()
+	{
+		if(isVisibleInViewport(btnGotoPic7))
+		{
+			System.out.println(btnGotoPic7+" is Visible In Viewport");
+		}
+		else
+		{
+			System.out.println(btnGotoPic7+" isn't  Visible In Viewport");
+			Assert.assertTrue(isVisibleInViewport(btnGotoPic7));
+		}
+		
+	}
+	public void checkbtn8VisibleInViewPort()
+	{
+		if(isVisibleInViewport(btnGotoPic8))
+		{
+			System.out.println(btnGotoPic8+" is Visible In Viewport");
+		}
+		else
+		{
+			System.out.println(btnGotoPic8+" isn't  Visible In Viewport");
+			Assert.assertTrue(isVisibleInViewport(btnGotoPic8));
+		}
+		
+	}
+	public void checkbtn9VisibleInViewPort()
+	{
+		if(isVisibleInViewport(btnGotoPic9))
+		{
+			System.out.println(btnGotoPic9+" is Visible In Viewport");
+		}
+		else
+		{
+			System.out.println(btnGotoPic9+" isn't  Visible In Viewport");
+			Assert.assertTrue(isVisibleInViewport(btnGotoPic9));
+		}
+		
+	}
 	public void waitForPic0Present() {
 		waitForElementPresent(pic0,driver);
 	}

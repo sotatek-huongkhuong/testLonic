@@ -7,13 +7,14 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BasePage {
 
-	WebDriver driver;
+	static WebDriver driver;
 	public List<WebElement> getlistElement(String xpath)
 	{
 		List<WebElement> Elements = new ArrayList<WebElement>();
@@ -66,6 +67,8 @@ public class BasePage {
 	}
 	public void checkElementToClickable(WebElement element,WebDriver driver1)
 	{
+		//System.out.println(element.isDisplayed());
+		//System.out.println(element.isEnabled());
 		try {
 		       new WebDriverWait(driver1, 10).until(ExpectedConditions.elementToBeClickable(element));
 		       System.out.println(element+" is clickable");
@@ -74,4 +77,20 @@ public class BasePage {
 		       System.out.println(element+" isn't clickable");
 		    }
 	}
+	public static Boolean isVisibleInViewport(WebElement element) {
+		
+
+		  return (Boolean)((JavascriptExecutor)driver).executeScript(
+		      "var elem = arguments[0],                 " +
+		      "  box = elem.getBoundingClientRect(),    " +
+		      "  cx = box.left + box.width / 2,         " +
+		      "  cy = box.top + box.height / 2,         " +
+		      "  e = document.elementFromPoint(cx, cy); " +
+		      "for (; e; e = e.parentElement) {         " +
+		      "  if (e === elem)                        " +
+		      "    return true;                         " +
+		      "}                                        " +
+		      "return false;                            "
+		      , element);
+		}
 }

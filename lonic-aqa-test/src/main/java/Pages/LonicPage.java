@@ -1,13 +1,11 @@
 package Pages;
 
-import java.util.List;
 
-import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
+import org.testng.*;
 public class LonicPage extends BasePage{
 	@FindBy(id= "button-go-to-0")
 	WebElement btnGotoPic0;
@@ -95,43 +93,43 @@ public class LonicPage extends BasePage{
 		scrollToElement(btnGotoPic9);
 	}
 	
-	public void checkbtn0isDisplayed ()
+	public void verifyBtn0isDisplayed ()
 	{
 		checkElementToClickable(btnGotoPic0,driver);
 	}
-	public void checkbtn1isDisplayed()
+	public void verifyBtn1isDisplayed()
 	{
 		checkElementToClickable(btnGotoPic1,driver);
 	}	
-	public void checkbtn2isDisplayed()
+	public void verifyBtn2isDisplayed()
 	{
 		checkElementToClickable(btnGotoPic2,driver);
 	}	
-	public void checkbtn3isDisplayed()
+	public void verifyBtn3isDisplayed()
 	{
 		checkElementToClickable(btnGotoPic3,driver);
 	}	
-	public void checkbtn4isDisplayed()
+	public void verifyBtn4isDisplayed()
 	{
 		checkElementToClickable(btnGotoPic4,driver);
 	}	
-	public void checkbtn5isDisplayed()
+	public void verifyBtn5isDisplayed()
 	{
 		checkElementToClickable(btnGotoPic5,driver);
 	}	
-	public void checkbtn6isDisplayed()
+	public void verifyBtn6isDisplayed()
 	{
 		checkElementToClickable(btnGotoPic6,driver);
 	}	
-	public void checkbtn7isDisplayed()
+	public void verifyBtn7isDisplayed()
 	{
 		checkElementToClickable(btnGotoPic7,driver);
 	}	
-	public void checkbtn8isDisplayed ()
+	public void verifyBtn8isDisplayed ()
 	{
 		checkElementToClickable(btnGotoPic8,driver);
 	}
-	public void checkbtn9isDisplayed ()
+	public void verifyBtn9isDisplayed ()
 	{
 		checkElementToClickable(btnGotoPic9,driver);
 	}
@@ -182,7 +180,7 @@ public class LonicPage extends BasePage{
 	{
 		click(btnGotoPic9);
 	}
-	public void checkbtn0VisibleInViewPort()
+	public void verifyBtn0VisibleInViewPort()
 	{
 		if(isVisibleInViewport(btnGotoPic0))
 		{
@@ -195,7 +193,7 @@ public class LonicPage extends BasePage{
 		}
 		
 	}
-	public void checkbtn1VisibleInViewPort()
+	public void verifyBtn1VisibleInViewPort()
 	{
 		if(isVisibleInViewport(btnGotoPic1))
 		{
@@ -208,7 +206,7 @@ public class LonicPage extends BasePage{
 		}
 		
 	}
-	public void checkbtn2VisibleInViewPort()
+	public void verifyBtn2VisibleInViewPort()
 	{
 		if(isVisibleInViewport(btnGotoPic2))
 		{
@@ -221,7 +219,7 @@ public class LonicPage extends BasePage{
 		}
 		
 	}
-	public void checkbtn3VisibleInViewPort()
+	public void verifyBtn3VisibleInViewPort()
 	{
 		if(isVisibleInViewport(btnGotoPic3))
 		{
@@ -234,7 +232,7 @@ public class LonicPage extends BasePage{
 		}
 		
 	}
-	public void checkbtn4VisibleInViewPort()
+	public void verifyBtn4VisibleInViewPort()
 	{
 		if(isVisibleInViewport(btnGotoPic4))
 		{
@@ -247,7 +245,7 @@ public class LonicPage extends BasePage{
 		}
 		
 	}
-	public void checkbtn5VisibleInViewPort()
+	public void verifyBtn5VisibleInViewPort()
 	{
 		if(isVisibleInViewport(btnGotoPic5))
 		{
@@ -260,7 +258,7 @@ public class LonicPage extends BasePage{
 		}
 		
 	}
-	public void checkbtn6VisibleInViewPort()
+	public void verifyBtn6VisibleInViewPort()
 	{
 		if(isVisibleInViewport(btnGotoPic6))
 		{
@@ -273,7 +271,7 @@ public class LonicPage extends BasePage{
 		}
 		
 	}
-	public void checkbtn7VisibleInViewPort()
+	public void verifyBtn7VisibleInViewPort()
 	{
 		if(isVisibleInViewport(btnGotoPic7))
 		{
@@ -286,7 +284,7 @@ public class LonicPage extends BasePage{
 		}
 		
 	}
-	public void checkbtn8VisibleInViewPort()
+	public void verifyBtn8VisibleInViewPort()
 	{
 		if(isVisibleInViewport(btnGotoPic8))
 		{
@@ -299,7 +297,7 @@ public class LonicPage extends BasePage{
 		}
 		
 	}
-	public void checkbtn9VisibleInViewPort()
+	public void verifyBtn9VisibleInViewPort()
 	{
 		if(isVisibleInViewport(btnGotoPic9))
 		{

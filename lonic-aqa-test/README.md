@@ -10,7 +10,7 @@ Follow the guideline from Maven homepage
 https://maven.apache.org/install.html
 <h3>Run project</h3>
 
-mvn 
+mvn test
 <h3>Report</h3>
 
 -  I spent 24 hours for the project.

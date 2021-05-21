@@ -10,7 +10,7 @@ Follow the guideline from Maven homepage
 https://maven.apache.org/install.html
 <h3>Run project</h3>
 
-run file: Eclipse\lonic-aqa-test\src\test\java\test\lonicTest.java
+mvn 
 <h3>Report</h3>
 
 -  I spent 24 hours for the project.

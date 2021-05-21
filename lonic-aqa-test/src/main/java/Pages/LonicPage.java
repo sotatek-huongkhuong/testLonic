@@ -93,48 +93,6 @@ public class LonicPage extends BasePage{
 		scrollToElement(btnGotoPic9);
 	}
 	
-	public void verifyBtn0isDisplayed ()
-	{
-		checkElementToClickable(btnGotoPic0,driver);
-	}
-	public void verifyBtn1isDisplayed()
-	{
-		checkElementToClickable(btnGotoPic1,driver);
-	}	
-	public void verifyBtn2isDisplayed()
-	{
-		checkElementToClickable(btnGotoPic2,driver);
-	}	
-	public void verifyBtn3isDisplayed()
-	{
-		checkElementToClickable(btnGotoPic3,driver);
-	}	
-	public void verifyBtn4isDisplayed()
-	{
-		checkElementToClickable(btnGotoPic4,driver);
-	}	
-	public void verifyBtn5isDisplayed()
-	{
-		checkElementToClickable(btnGotoPic5,driver);
-	}	
-	public void verifyBtn6isDisplayed()
-	{
-		checkElementToClickable(btnGotoPic6,driver);
-	}	
-	public void verifyBtn7isDisplayed()
-	{
-		checkElementToClickable(btnGotoPic7,driver);
-	}	
-	public void verifyBtn8isDisplayed ()
-	{
-		checkElementToClickable(btnGotoPic8,driver);
-	}
-	public void verifyBtn9isDisplayed ()
-	{
-		checkElementToClickable(btnGotoPic9,driver);
-	}
-	
-	
 	public void scrollToBtnGoTo0()
 	{
 		scrollToElement(btnGotoPic0);

@@ -10,9 +10,8 @@ Follow the guideline from Maven homepage
 https://maven.apache.org/install.html
 <h3>Run project</h3>
 
-mvn clean test
+mvn test
 <h3>Report</h3>
 
-- Record how many hours you spent on the projecy
-- Record what you would improve on if you had more time
-- Include these in th README.md
+-  I spent 24 hours for the project.
+- if you had more time, i will improve file BaseTest
